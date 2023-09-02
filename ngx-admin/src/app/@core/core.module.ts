@@ -49,92 +49,15 @@ export const NB_CORE_PROVIDERS = [
         token: {
           key: "data.access_token",
         },
-        baseEndpoint: "http://5.63.13.16/api/v1",
-
+        baseEndpoint: 'http://localhost:8080/app-api/v1',
         login: {
-          endpoint: "/user/tokenbybody",
-          method: "post",
-        },
-        register: {
-          endpoint: "/user/create",
-          method: "post",
-        },
-        logout: {
-          endpoint: "/user/logout",
-          method: "post",
-        },
-        requestPass: {
-          endpoint: "/password/forgotpassword",
-          method: "post",
-        },
-        resetPass: {
-          endpoint: "/password/changepassword",
-          method: "post",
+          endpoint: '/auth/sign-in',
+          method: 'post',
         },
       }),
     ],
     forms: {
-      login: {
-        redirectDelay: 500,
-        strategy: "email",
-        rememberMe: false,
-        showMessages: {
-          success: true,
-          error: true,
-        },
-        redirect: {
-          success: "/",
-          failure: null,
-        },
-        // socialLinks: socialLinks,
-      },
-      register: {
-        redirectDelay: 500,
-        strategy: "email",
-        showMessages: {
-          success: true,
-          error: true,
-        },
-        terms: true,
-        // socialLinks: socialLinks,
-      },
-      requestPassword: {
-        redirectDelay: 500,
-        strategy: "email",
-        showMessages: {
-          success: true,
-          error: true,
-        },
-        socialLinks: socialLinks,
-      },
-      resetPassword: {
-        redirectDelay: 500,
-        strategy: "email",
-        showMessages: {
-          success: true,
-          error: true,
-        },
-        socialLinks: socialLinks,
-      },
-      logout: {
-        redirectDelay: 500,
-        strategy: "email",
-      },
-      validation: {
-        password: {
-          required: true,
-          minLength: 8,
-          maxLength: 50,
-        },
-        email: {
-          required: true,
-        },
-        fullName: {
-          required: false,
-          minLength: 4,
-          maxLength: 100,
-        },
-      },
+     
     },
   }).providers,
 
