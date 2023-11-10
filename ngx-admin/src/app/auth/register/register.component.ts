@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NbRegisterComponent } from '@nebular/auth';
 
 @Component({
@@ -7,4 +7,5 @@ import { NbRegisterComponent } from '@nebular/auth';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent extends NbRegisterComponent {
+  
 }

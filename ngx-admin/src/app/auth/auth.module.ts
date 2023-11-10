@@ -14,6 +14,7 @@ import {
 
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from './register/register.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     LoginComponent,
     RegisterComponent,
+    LogoutComponent,
   ],
 })
 export class AuthModule {}

@@ -52,11 +52,6 @@
     }
   }
 
-  .direction-switcher {
-    @include nb-ltr(margin-left, 2rem);
-    @include nb-rtl(margin-right, 2rem);
-  }
-
   @include media-breakpoint-down(sm) {
     .control-item {
       display: none;
